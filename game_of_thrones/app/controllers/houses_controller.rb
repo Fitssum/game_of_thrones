@@ -28,7 +28,7 @@ class HousesController < ApplicationController
     @house = House.find(params[:id])
     @house.destroy
 
-    redirect_to "/houses"
+    redirect_to :root
   end
 
   private
