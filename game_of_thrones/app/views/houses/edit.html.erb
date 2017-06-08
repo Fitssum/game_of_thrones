@@ -1,0 +1,23 @@
+<h2>Update House</h2>
+
+<form action="/houses/<%= @house.id %>" method="post">
+  <input type="hidden" house_name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" house_name="_method" value="put">
+
+  <label for="house[house_name]">house_name:</label>
+  <input house_name="house[house_name]" value="<%= @house.house_name %>">
+
+  <label for="house[img_url]">img_url:</label>
+  <input house_name="house[img_url]" value="<%= @house.img_url %>">
+
+  <label for="house[kingdom]">Kingdom:</label>
+  <input house_namUpdatee="house[kingdom]" value="<%= @house.kingdom %>">
+
+  <input type="submit" value="Update">
+</form>
+
+<form action="/houses/<%= @house.id %>" method="post">
+  <input type="hidden" house_name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" house_name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>

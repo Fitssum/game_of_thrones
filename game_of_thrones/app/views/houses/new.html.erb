@@ -1,0 +1,15 @@
+<h2>New House</h2>
+
+<form action="/houses" method="post" >
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="house[house_name]">Name:</label>
+  <input name="house[house_name]">
+
+  <label for="house[img_url]">img_url:</label>
+  <input name="house[img_url]">
+
+  <label for="house[kingdom]">Kingdom:</label>
+  <input name="house[kingdom]">
+
+  <input type="submit" value="Create">
+</form>

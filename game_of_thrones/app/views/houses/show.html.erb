@@ -1,0 +1,12 @@
+<h1>House of Game of Thrones</a></h1>
+  <h3>Name: <%= @house.house_name %></h3>
+  <h3>Kingdom: <%= @house.kingdom %></h3>
+  <h3><img src="<%= @house.img_url %>"</h3>
+
+<div>
+  <a href="/houses/1/characters">See characters</a>
+</div>
+
+<div>
+  <a href="/houses/<%=@house.id%>/edit">Update House</a>
+</div>
